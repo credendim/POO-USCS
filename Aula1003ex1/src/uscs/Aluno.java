@@ -72,16 +72,15 @@ public class Aluno {
     
     public String resultado(){
         String resultado = "";
-        if (mediaAluno(nota_P1, nota_P2, nota_P3) >= 6) {
+        if (mediaAluno(nota_P1, nota_P2, nota_P3) > 10) {
+            System.out.println("Média invalida!!!!");
+        } else if (mediaAluno(nota_P1, nota_P2, nota_P3) >= 6){
             System.out.println("Aprovado");
             resultado = "Aprovado";
             return resultado;
-        } else if (mediaAluno(nota_P1, nota_P2, nota_P3) <= 6){
+        } else if (mediaAluno(nota_P1, nota_P2, nota_P3) <= 6) {
             System.out.println("Reprovado");
             resultado = "Reprovado";
-            return resultado;
-        } else if (mediaAluno(nota_P1, nota_P2, nota_P3) > 10) {
-            System.out.println("Média invalida!!!!");
             return resultado;
         }
     }
