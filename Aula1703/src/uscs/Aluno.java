@@ -8,7 +8,7 @@ public class Aluno {
         private double notan1;
         private double notan2;
         
-        // Métodos
+        // Metodos
         public Aluno(){} //Construtor default
         
         public Aluno(String nome, int idade, int matricula, double notan1, double notan2){
